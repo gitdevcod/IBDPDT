@@ -55,7 +55,7 @@ export default function Home() {
                   document.getElementById('squad')?.scrollIntoView({ behavior: 'smooth' });
                 }}
               >
-                Squad
+                The Squad
               </motion.a>
               <motion.a
                 href="#chat"
@@ -70,6 +70,34 @@ export default function Home() {
                 }}
               >
                 Chat Group
+              </motion.a>
+              <motion.a
+                href="#work"
+                className="text-gray-300 hover:text-lime-400 transition-colors duration-300 font-medium"
+                initial={{ opacity: 0, y: -10 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.4, delay: 0.12 }}
+                whileHover={{ scale: 1.05 }}
+                onClick={(e) => {
+                  e.preventDefault();
+                  document.getElementById('work')?.scrollIntoView({ behavior: 'smooth' });
+                }}
+              >
+                Our Work
+              </motion.a>
+              <motion.a
+                href="#lab"
+                className="text-gray-300 hover:text-lime-400 transition-colors duration-300 font-medium"
+                initial={{ opacity: 0, y: -10 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.4, delay: 0.15 }}
+                whileHover={{ scale: 1.05 }}
+                onClick={(e) => {
+                  e.preventDefault();
+                  document.getElementById('lab')?.scrollIntoView({ behavior: 'smooth' });
+                }}
+              >
+                The Lab
               </motion.a>
             </div>
 
@@ -241,7 +269,7 @@ export default function Home() {
               </div>
               <h3 className="text-sm font-semibold text-white text-center mb-1">BK</h3>
               <p className="text-xs text-gray-400 text-center italic">
-                The Master
+                The Master Mind
               </p>
             </motion.div>
 
@@ -295,7 +323,7 @@ export default function Home() {
               </div>
               <h3 className="text-sm font-semibold text-white text-center mb-1">AA</h3>
               <p className="text-xs text-gray-400 text-center italic">
-                The Visionary
+                The Chief Visionary
               </p>
             </motion.div>
 
@@ -309,11 +337,11 @@ export default function Home() {
               whileHover={{ scale: 1.02 }}
             >
               <div className="w-12 h-12 bg-gradient-to-br from-lime-400/20 to-lime-400/5 rounded-full mx-auto mb-2 flex items-center justify-center">
-                <TestTube className="w-5 h-5 text-lime-400" />
+                <BookOpen className="w-5 h-5 text-lime-400" />
               </div>
               <h3 className="text-sm font-semibold text-white text-center mb-1">RBS</h3>
               <p className="text-xs text-gray-400 text-center italic">
-                Tinkerer
+                The Philosopher
               </p>
             </motion.div>
 
@@ -331,7 +359,7 @@ export default function Home() {
               </div>
               <h3 className="text-sm font-semibold text-white text-center mb-1">RA</h3>
               <p className="text-xs text-gray-400 text-center italic">
-                Quiet Genius
+                The Futurist
               </p>
             </motion.div>
 
@@ -385,7 +413,7 @@ export default function Home() {
               </div>
               <h3 className="text-sm font-semibold text-white text-center mb-1">HS</h3>
               <p className="text-xs text-gray-400 text-center italic">
-                Creative Visionary
+                The Entrepreneur
               </p>
             </motion.div>
 
@@ -403,8 +431,93 @@ export default function Home() {
               </div>
               <h3 className="text-sm font-semibold text-white text-center mb-1">YA</h3>
               <p className="text-xs text-gray-400 text-center italic">
-                Chief Panic Officer
+                The Teacher
               </p>
+            </motion.div>
+          </div>
+        </div>
+      </section>
+
+      {/* Our Work Section */}
+      <section id="work" className="py-20 px-8 bg-black">
+        <div className="max-w-6xl mx-auto">
+          <motion.div 
+            className="text-center mb-16"
+            initial={{ opacity: 0, y: 30 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8 }}
+            viewport={{ once: true }}
+          >
+            <h2 className="text-4xl md:text-5xl font-black text-white mb-6">
+              Our <span className="text-lime-400">Work</span>
+            </h2>
+            <p className="text-xl text-gray-300 max-w-3xl mx-auto mb-8">
+              Coming soon.
+            </p>
+          </motion.div>
+          
+        </div>
+      </section>
+
+      {/* The Lab Section */}
+      <section id="lab" className="py-20 px-8 bg-black">
+        <div className="max-w-6xl mx-auto">
+          <motion.div 
+            className="text-center mb-16"
+            initial={{ opacity: 0, y: 30 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8 }}
+            viewport={{ once: true }}
+          >
+            <h2 className="text-4xl md:text-5xl font-black text-white mb-6">
+              The <span className="text-lime-400">Lab</span>
+            </h2>
+            <p className="text-xl text-gray-300 max-w-3xl mx-auto">
+              A playful space for rapid experiments, messy prototypes, and brave ideas.
+            </p>
+          </motion.div>
+
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+            <motion.div 
+              className="bg-gray-900/50 rounded-2xl p-6 border border-gray-700"
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.4, delay: 0.05 }}
+              viewport={{ once: true }}
+            >
+              <div className="w-12 h-12 bg-lime-400/10 rounded-full flex items-center justify-center mb-3">
+                <Lightbulb className="w-6 h-6 text-lime-400" />
+              </div>
+              <h3 className="text-lg font-semibold text-white mb-1">Mission</h3>
+              <p className="text-sm text-gray-400">Make creative panic useful. Build, break, learn—fast.</p>
+            </motion.div>
+
+            <motion.div 
+              className="bg-gray-900/50 rounded-2xl p-6 border border-gray-700"
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.4, delay: 0.1 }}
+              viewport={{ once: true }}
+            >
+              <div className="w-12 h-12 bg-lime-400/10 rounded-full flex items-center justify-center mb-3">
+                <Microscope className="w-6 h-6 text-lime-400" />
+              </div>
+              <h3 className="text-lg font-semibold text-white mb-1">Experiments</h3>
+              <p className="text-sm text-gray-400">Weekly sprints, tiny tests, and unapologetic prototypes.</p>
+            </motion.div>
+
+            <motion.div 
+              className="bg-gray-900/50 rounded-2xl p-6 border border-gray-700"
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.4, delay: 0.15 }}
+              viewport={{ once: true }}
+            >
+              <div className="w-12 h-12 bg-lime-400/10 rounded-full flex items-center justify-center mb-3">
+                <Users className="w-6 h-6 text-lime-400" />
+              </div>
+              <h3 className="text-lg font-semibold text-white mb-1">Join</h3>
+              <p className="text-sm text-gray-400">Bring your chaos. The lab is open to brave builders.</p>
             </motion.div>
           </div>
         </div>
