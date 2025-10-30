@@ -55,7 +55,7 @@ export default function Home() {
                   document.getElementById('squad')?.scrollIntoView({ behavior: 'smooth' });
                 }}
               >
-                The Squad
+                Squad
               </motion.a>
               <motion.a
                 href="#chat"
