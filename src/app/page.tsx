@@ -155,21 +155,12 @@ export default function Home() {
               transition={{ duration: 1.2, delay: 0.5, ease: "easeOut" }}
             >
               <div className="relative w-full max-w-md lg:max-w-lg">
-                {/* Placeholder for image - you can replace this with an actual image */}
-                <div className="aspect-square bg-gradient-to-br from-gray-800 to-gray-900 rounded-2xl border border-gray-700 flex items-center justify-center relative overflow-hidden">
-                  {/* Abstract design pattern overlay */}
-                  <div className="absolute inset-0 bg-gradient-to-br from-lime-400/10 to-transparent" />
-                  <div className="absolute top-4 right-4 w-16 h-16 bg-lime-400/20 rounded-full blur-xl" />
-                  <div className="absolute bottom-4 left-4 w-24 h-24 bg-lime-400/10 rounded-full blur-2xl" />
-                  
-                  {/* Placeholder content */}
-                  <div className="text-center z-10">
-                    <div className="w-24 h-24 mx-auto mb-4 bg-lime-400/20 rounded-full flex items-center justify-center">
-                      <Beaker className="w-12 h-12 text-lime-400" />
-                    </div>
-                    <p className="text-sm text-gray-400 font-medium">Design in Chaos</p>
-                    <p className="text-xs text-gray-500 mt-1">Where panic meets creativity</p>
-                  </div>
+                <div className="aspect-square rounded-2xl border border-gray-700 overflow-hidden">
+                  <img 
+                    src="/hero-image.jpg" 
+                    alt="IBDPDT Lab" 
+                    className="w-full h-full object-cover"
+                  />
                 </div>
               </div>
             </motion.div>
@@ -214,7 +205,7 @@ export default function Home() {
               </div>
               <h3 className="text-sm font-semibold text-white text-center mb-1">LA</h3>
               <p className="text-xs text-gray-400 text-center italic">
-                The Perfectionist
+                The Creative Perfectionist
               </p>
             </motion.div>
 
@@ -286,7 +277,7 @@ export default function Home() {
               </div>
               <h3 className="text-sm font-semibold text-white text-center mb-1">LM</h3>
               <p className="text-xs text-gray-400 text-center italic">
-                The Mental Care Giver
+                The Life Saver
               </p>
             </motion.div>
 
