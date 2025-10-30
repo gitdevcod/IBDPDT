@@ -395,7 +395,7 @@ export default function Home() {
               </div>
               <h3 className="text-sm font-semibold text-white text-center mb-1">YS</h3>
               <p className="text-xs text-gray-400 text-center italic">
-                The Tinkerer
+                The Hacker
               </p>
             </motion.div>
 
